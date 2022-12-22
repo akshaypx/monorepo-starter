@@ -1,8 +1,13 @@
 import express from "express";
 import cors from "cors";
-
+import _ from "lodash";
+import { QueryPayload } from "simple-shared-data";
 const app = express();
 const port = 3001;
+
+// export interface QueryPayload {
+//   payload: string;
+// }
 
 app.use(
   cors({
@@ -10,8 +15,11 @@ app.use(
   })
 );
 
-app.get("/data", (req, res) => {
-  res.json({ foo: "bar" });
+app.get("/data", (_req, res) => {
+  const responseData: QueryPayload = {
+    payload: _.snakeCase("Server data returned successfully"),
+  };
+  res.json(responseData);
 });
 
 app.listen(port, () => {

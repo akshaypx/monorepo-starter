@@ -1,0 +1,29 @@
+{
+  "name": "simple-shared-data",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "NAGARRO\\akshaysrivastava <akshay.srivastava@nagarro.com>",
+  "homepage": "https://github.com/akshaypx/monorepo-starter#readme",
+  "license": "ISC",
+  "main": "lib/simple-shared-data.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaypx/monorepo-starter.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/simple-shared-data.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/akshaypx/monorepo-starter/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
