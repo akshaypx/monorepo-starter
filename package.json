@@ -1,0 +1,17 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.1.0",
+    "typescript": "^4.9.4"
+  },
+  "private": "true",
+  "scripts": {
+    "start": "lerna run --parallel start"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
